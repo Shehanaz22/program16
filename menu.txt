@@ -1,0 +1,18 @@
+[200~#!/bin/bash
+while true
+do
+echo "1. List files"
+echo "2. Show current directory"
+echo "3. Show date"
+echo "4. Exit"
+echo "Enter your choice:"
+read ch
+case $ch in
+1) ls ;;
+2) pwd ;;
+3) date ;;
+4) exit ;;
+*) echo "Invalid choice" ;;
+esac
+
+done
